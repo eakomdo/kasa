@@ -43,6 +43,9 @@ You can sign in to the Django admin as `efua.asante@example.com` / `demo1234`.
 | yaw.darko@example.com | Moderator |
 | efua.asante@example.com | Admin |
 
+`seed_demo` only creates these accounts when `DJANGO_DEBUG` (or `KASA_DEMO_DATA`) is true, because their password is
+public. In production, run `seed_demo --curriculum-only`.
+
 ## Production-like stack
 
 ```bash

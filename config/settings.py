@@ -139,6 +139,8 @@ KHAYA_API_KEY = env('KHAYA_API_KEY', default='')
 KHAYA_BASE_URL = env('KHAYA_BASE_URL', default='https://translation-api.ghananlp.org')
 KHAYA_TIMEOUT = env.int('KHAYA_TIMEOUT', default=20)
 TTS_CACHE_DIR = MEDIA_ROOT / 'tts-cache'
+# Sample accounts share a published password (demo1234), so never create them in production
+KASA_DEMO_DATA = env.bool('KASA_DEMO_DATA', default=DEBUG)
 
 # ---------------------------------------------------------------- Production hardening
 if not DEBUG:

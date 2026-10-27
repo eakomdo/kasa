@@ -11,6 +11,7 @@ def _fast_tests(settings):
     settings.ALLOWED_HOSTS = ['testserver']
     settings.REST_FRAMEWORK = {**settings.REST_FRAMEWORK, 'DEFAULT_THROTTLE_CLASSES': []}
     settings.KHAYA_API_KEY = ''  # never call the real Khaya API from tests
+    settings.KASA_DEMO_DATA = True  # pytest-django runs with DEBUG off
 
 
 @pytest.fixture

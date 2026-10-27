@@ -13,7 +13,8 @@ import json
 from datetime import timedelta
 from pathlib import Path
 
-from django.core.management.base import BaseCommand
+from django.conf import settings
+from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
 from django.utils import timezone
 
@@ -144,6 +145,11 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS(f'Curriculum: {Unit.objects.count()} units, {items} items'))
         if opts['curriculum_only']:
             return
+        if not settings.KASA_DEMO_DATA:
+            raise CommandError(
+                'Demo accounts use a public password, so they are off unless DJANGO_DEBUG or KASA_DEMO_DATA is true. '
+                'Use --curriculum-only in production.'
+            )
 
         users = seed_people(now)
         seed_learning(users['u-ama'], now)
