@@ -1,0 +1,79 @@
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.choice {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  text-align: left;
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-press) var(--line);
+}
+.choice[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: var(--shadow-press) var(--accent);
+}
+.glyph {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  display: grid;
+  place-items: center;
+  flex: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+}
+.text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.text b {
+  font-size: var(--text-md);
+}
+.text span {
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+
+.band {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.levels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+.level {
+  border: 2px solid var(--line);
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 10px 6px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 2px 0 var(--line);
+}
+.level small {
+  display: block;
+  font-weight: 500;
+  font-size: var(--text-xs);
+  color: var(--muted);
+}
+.level[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  box-shadow: 0 2px 0 var(--accent);
+}

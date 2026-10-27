@@ -1,0 +1,33 @@
+.button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--accent-ink);
+  display: grid;
+  place-items: center;
+  flex: none;
+  transition:
+    border-color 120ms,
+    background 120ms;
+}
+.button:hover {
+  background: var(--raised);
+}
+.lg {
+  width: 56px;
+  height: 56px;
+}
+.onHero {
+  color: var(--ink);
+}
+.playing {
+  border-color: var(--accent);
+  animation: pulse 0.9s ease-in-out infinite;
+}
+@keyframes pulse {
+  50% {
+    transform: scale(1.08);
+  }
+}

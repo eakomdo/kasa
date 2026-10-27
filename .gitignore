@@ -1,0 +1,13 @@
+node_modules/
+dist/
+dev-dist/
+coverage/
+*.local
+.env.local
+.env.*.local
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+test-results
+playwright-report

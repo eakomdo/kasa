@@ -1,0 +1,104 @@
+/* Flat pill buttons. One primary (accent) action per screen; everything else is outline or text. */
+.button {
+  --btn-bg: var(--accent);
+  --btn-fg: var(--on-accent);
+  --btn-border: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 52px;
+  padding: 0 var(--space-6);
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-weight: 600;
+  font-size: var(--text-md);
+  line-height: 1.1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    filter 120ms,
+    transform 80ms,
+    background 120ms,
+    border-color 120ms;
+}
+.button:hover:not(:disabled) {
+  filter: brightness(1.06);
+}
+.button:active:not(:disabled) {
+  transform: scale(0.98);
+}
+.button:disabled,
+.button[aria-disabled='true'] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* "gold" kept as an alias of primary for older call sites */
+.gold {
+  --btn-bg: var(--accent);
+  --btn-fg: var(--on-accent);
+}
+.ghost {
+  --btn-bg: transparent;
+  --btn-fg: var(--ink);
+  --btn-border: var(--line-strong);
+}
+.ghost:hover:not(:disabled) {
+  filter: none;
+  --btn-border: var(--muted);
+}
+.danger {
+  --btn-bg: transparent;
+  --btn-fg: var(--danger);
+  --btn-border: color-mix(in srgb, var(--danger) 55%, transparent);
+}
+.subtle {
+  --btn-bg: var(--raised);
+  --btn-fg: var(--ink);
+}
+
+.sm {
+  min-height: 40px;
+  padding: 0 var(--space-4);
+  font-size: var(--text-sm);
+}
+.block {
+  width: 100%;
+}
+
+.iconButton {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  text-decoration: none;
+  transition:
+    background 120ms,
+    border-color 120ms;
+}
+.iconButton:hover {
+  background: var(--raised);
+  border-color: var(--line-strong);
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2.5px solid currentColor;
+  border-right-color: transparent;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

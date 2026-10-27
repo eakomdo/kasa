@@ -1,0 +1,102 @@
+/*
+ * Kasa design tokens. Dark-first ("Night"): a deep green-black ground, one gold
+ * accent for actions, serif headings. Light mode is the opt-in alternative.
+ *
+ * Components use SEMANTIC tokens only (accent, success, danger…), never raw
+ * colours, so the whole look changes here.
+ *
+ * Type: Libre Baskerville (headings, featured Twi/Ga words) + Source Sans 3 (UI).
+ * Both cover ɛ ɔ ŋ Ɛ Ɔ Ŋ, which most popular web fonts do not.
+ */
+:root {
+  /* Ground and text */
+  --paper: #0d1210; /* page background */
+  --surface: #141a17; /* the rare bordered surface */
+  --raised: #1a211d; /* filled blocks: today card, inputs */
+  --sunk: #1a211d;
+  --line: #222a25; /* dividers */
+  --line-strong: #323d36; /* outlines on buttons and inputs */
+  --ink: #eef0eb;
+  --muted: #9ba69e;
+  --subtle: #6f7a72;
+
+  /* Accent: gold for anything you can act on */
+  --accent: #e9b23a;
+  --accent-soft: #2b2414;
+  --accent-ink: #f2c968; /* accent used as text */
+  --on-accent: #1a1404;
+
+  /* Meaning */
+  --success: #3dbe84;
+  --success-soft: #142b20;
+  --danger: #ef7a5c;
+  --danger-soft: #331b14;
+  --info: #7fb2f0;
+  --info-soft: #16263a;
+  --kente-ink: #0b0e0c;
+
+  /* Type */
+  --font-display: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --text-xs: 0.78rem;
+  --text-sm: 0.9rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.875rem;
+  --text-3xl: 2.5rem;
+
+  /* Space, radius, motion */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 56px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+  --shadow-press: 0 0 0; /* legacy: buttons are flat now */
+  --shadow-pop: 0 20px 50px rgb(0 0 0 / 0.45);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* Layout */
+  --sidebar-width: 248px;
+  --content-max: 1040px;
+  --reading-max: 720px;
+  --mobile-max: 560px;
+  --gutter: max(20px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(20px, env(safe-area-inset-right, 0px));
+  --tabbar-height: 72px;
+
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --paper: #fbfbf9;
+  --surface: #ffffff;
+  --raised: #eef3ee;
+  --sunk: #f1f3ef;
+  --line: #e6e8e3;
+  --line-strong: #d3d9d1;
+  --ink: #141614;
+  --muted: #5f665f;
+  --subtle: #858c85;
+  --accent: #0f6b4b;
+  --accent-soft: #e3efe7;
+  --accent-ink: #0f6b4b;
+  --on-accent: #ffffff;
+  --success: #1f8a55;
+  --success-soft: #e1f2e8;
+  --danger: #b4441f;
+  --danger-soft: #f6e1d9;
+  --info: #1f5fa8;
+  --info-soft: #dde9f7;
+  --kente-ink: #141614;
+  --shadow-pop: 0 18px 48px rgb(0 0 0 / 0.14);
+  color-scheme: light;
+}

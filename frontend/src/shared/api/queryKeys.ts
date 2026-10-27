@@ -1,0 +1,30 @@
+/** Every query key in one place so invalidation stays consistent across features. */
+export const qk = {
+  me: ['me'] as const,
+  units: (lang: string, levelId: string) => ['units', lang, levelId] as const,
+  unitsAll: ['units'] as const,
+  unit: (unitId: string) => ['unit', unitId] as const,
+  vocabulary: (unitId: string) => ['unit', unitId, 'vocabulary'] as const,
+  phrases: (unitId: string) => ['unit', unitId, 'phrases'] as const,
+  progress: (lang: string) => ['progress', lang] as const,
+  progressAll: ['progress'] as const,
+  notifications: ['notifications'] as const,
+  leaderboard: (scope: string, lang: string) => ['leaderboard', scope, lang] as const,
+  community: {
+    all: ['community'] as const,
+    communities: (scope: string, q = '') => ['community', 'communities', scope, q] as const,
+    communitiesAll: ['community', 'communities'] as const,
+    detail: (id: string) => ['community', 'detail', id] as const,
+    members: (id: string, status: string) => ['community', 'members', id, status] as const,
+    threads: (params: Record<string, unknown>) => ['community', 'threads', params] as const,
+    thread: (id: string) => ['community', 'thread', id] as const,
+  },
+  admin: {
+    all: ['admin'] as const,
+    overview: ['admin', 'overview'] as const,
+    reports: (status: string) => ['admin', 'reports', status] as const,
+    suggestions: (status: string) => ['admin', 'suggestions', status] as const,
+    users: (params: Record<string, unknown>) => ['admin', 'users', params] as const,
+    communities: (status: string) => ['admin', 'communities', status] as const,
+  },
+};

@@ -1,0 +1,316 @@
+/* Practice: one word, lots of space, the answer revealed in place. No boxes. */
+.session {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  min-height: calc(100dvh - 120px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+.top > div:first-of-type {
+  flex: 1;
+}
+.left {
+  font-size: var(--text-sm);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* Flashcard */
+.stage {
+  flex: 1;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font: inherit;
+  text-align: center;
+  padding: var(--space-6) 0;
+  border-radius: var(--radius-lg);
+}
+.word {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 11vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  overflow-wrap: anywhere;
+}
+.rule {
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 200ms var(--ease);
+}
+.meaning {
+  font-size: var(--text-lg);
+  color: var(--muted);
+  min-height: 1.6em;
+  transition:
+    color 200ms var(--ease),
+    font-size 200ms var(--ease);
+}
+.stage[data-revealed='true'] .rule {
+  opacity: 1;
+}
+.stage[data-revealed='true'] .meaning {
+  color: var(--ink);
+  font-size: var(--text-xl);
+}
+.audioRow {
+  display: flex;
+  justify-content: center;
+  margin-top: calc(var(--space-6) * -1);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.ask {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--muted);
+}
+.answerRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+.shortcuts {
+  text-align: center;
+  font-size: var(--text-xs);
+  color: var(--subtle);
+}
+
+/* Choice + typing */
+.prompt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-8) 0 var(--space-4);
+  text-align: center;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: left;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  font-weight: 600;
+  font-size: var(--text-lg);
+  transition:
+    border-color 120ms,
+    background 120ms;
+}
+.option:hover:not(:disabled) {
+  border-color: var(--muted);
+}
+.option kbd {
+  font: inherit;
+  font-size: var(--text-xs);
+  color: var(--subtle);
+  min-width: 1.2em;
+}
+.option:disabled {
+  cursor: default;
+}
+.option[data-state='right'] {
+  border-color: var(--success);
+  background: var(--success-soft);
+}
+.option[data-state='wrong'] {
+  border-color: var(--danger);
+  background: var(--danger-soft);
+}
+
+.typeInput {
+  height: 60px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line-strong);
+  background: var(--raised);
+  padding: 0 18px;
+  font-size: var(--text-xl);
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+.typeInput:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.keys {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.keys button {
+  min-width: 48px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+.keys button:hover {
+  border-color: var(--line-strong);
+}
+
+.feedback {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) 0;
+  border-top: 1px solid var(--line);
+}
+.feedbackText {
+  flex: 1;
+  min-width: 0;
+}
+.feedback[data-grade='correct'] strong {
+  color: var(--success);
+}
+.feedback[data-grade='almost'] strong {
+  color: var(--accent-ink);
+}
+.feedback[data-grade='wrong'] strong {
+  color: var(--danger);
+}
+.feedbackAnswer {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-xl);
+}
+
+.praise {
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--accent-ink);
+  pointer-events: none;
+  animation: pop 650ms ease-out forwards;
+  z-index: 60;
+}
+@media (min-width: 960px) {
+  .praise {
+    left: calc(50% + var(--sidebar-width) / 2);
+  }
+}
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -30%);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -80%);
+  }
+}
+
+/* Summary */
+.summary {
+  text-align: center;
+  align-items: center;
+  padding-top: var(--space-8);
+}
+.cheer {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2.4rem, 10vw, 3.2rem);
+  color: var(--accent-ink);
+  line-height: 1.1;
+}
+
+/* Hub */
+.modes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.modes > li + li {
+  border-top: 1px solid var(--line);
+}
+.mode {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  padding: var(--space-4) 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+.mode:hover .modeText b {
+  color: var(--accent-ink);
+}
+.modeIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex: none;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  border: 1px solid var(--line-strong);
+  color: var(--accent-ink);
+}
+.modeText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+.modeText b {
+  font-weight: 600;
+  transition: color 120ms;
+}
+.modeText span {
+  color: var(--muted);
+  font-size: var(--text-sm);
+}

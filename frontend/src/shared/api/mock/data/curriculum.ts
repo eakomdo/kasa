@@ -1,0 +1,432 @@
+/**
+ * Sample curriculum for the mock backend. In production this lives in the
+ * database and is entered by the curriculum team through Django admin.
+ * Ga entries are marked "review": they need native-speaker sign-off.
+ */
+import type { BandId } from '@/shared/config/levels';
+import type { LanguageId } from '@/shared/config/languages';
+
+export interface SeedUnit {
+  id: string;
+  lang: LanguageId;
+  bands: BandId[];
+  titleLocal: string | null;
+  titleEn: string;
+  strand: string;
+  note: string;
+  contentStatus: 'verified' | 'review';
+  words: Array<[english: string, translation: string]>;
+  phrases: Array<[english: string, translation: string]>;
+}
+
+export interface SeedItem {
+  id: string;
+  unitId: string | null;
+  lang: LanguageId;
+  kind: 'word' | 'phrase';
+  english: string;
+  translation: string;
+  audioUrl: string | null;
+}
+
+export const UNITS: SeedUnit[] = [
+  {
+    id: 'tw-greet',
+    lang: 'twi',
+    bands: ['lp', 'up', 'jhs'],
+    titleLocal: 'Nkyia',
+    titleEn: 'Greetings and introductions',
+    strand: 'Oral language',
+    contentStatus: 'verified',
+    note: 'Greet elders first, and use your right hand to wave or shake hands. When an older woman greets you, reply “Yaa ɛna”; for an older man, “Yaa agya”.',
+    words: [
+      ['Good morning', 'Maakye'],
+      ['Good afternoon', 'Maaha'],
+      ['Good evening', 'Maadwo'],
+      ['Welcome', 'Akwaaba'],
+      ['Thank you', 'Medaase'],
+      ['Please', 'Mepa wo kyɛw'],
+      ['Sorry', 'Kafra'],
+      ['Yes', 'Aane'],
+      ['No', 'Daabi'],
+      ['Goodbye (walk well)', 'Nante yie'],
+    ],
+    phrases: [
+      ['How are you?', 'Wo ho te sɛn?'],
+      ['I am fine.', 'Me ho yɛ.'],
+      ['What is your name?', 'Wo din de sɛn?'],
+      ['My name is Ama.', 'Me din de Ama.'],
+      ['Where do you come from?', 'Wofiri he?'],
+      ['I come from Kumasi.', 'Mefiri Kumasi.'],
+      ["Reply to an older woman's greeting", 'Yaa ɛna'],
+    ],
+  },
+  {
+    id: 'tw-family',
+    lang: 'twi',
+    bands: ['lp', 'up', 'jhs'],
+    titleLocal: 'Abusua',
+    titleEn: 'Family',
+    strand: 'Vocabulary',
+    contentStatus: 'verified',
+    note: "In Akan tradition, family runs through the mother's line. Your wɔfa (mother's brother) often plays a big role in your upbringing.",
+    words: [
+      ['Family', 'Abusua'],
+      ['Mother', 'Maame'],
+      ['Father', 'Agya'],
+      ['Child', 'Abɔfra'],
+      ['Sibling', 'Nua'],
+      ['Grandparent', 'Nana'],
+      ["Uncle (mother's brother)", 'Wɔfa'],
+      ['Wife', 'Yere'],
+      ['Husband', 'Kunu'],
+      ['Twins', 'Ntafoɔ'],
+    ],
+    phrases: [
+      ['This is my mother.', 'Yei ne me maame.'],
+      ['I have two siblings.', 'Mewɔ anuanom baanu.'],
+      ['My family is big.', 'Me abusua yɛ kɛseɛ.'],
+    ],
+  },
+  {
+    id: 'tw-num',
+    lang: 'twi',
+    bands: ['lp', 'up', 'jhs'],
+    titleLocal: 'Akontabuo',
+    titleEn: 'Numbers 1 to 10',
+    strand: 'Vocabulary',
+    contentStatus: 'verified',
+    note: 'Twi uses a different form when counting people: “baanu” for two people, “mmienu” for two things.',
+    words: [
+      ['One', 'Baako'],
+      ['Two', 'Mmienu'],
+      ['Three', 'Mmiɛnsa'],
+      ['Four', 'Ɛnan'],
+      ['Five', 'Enum'],
+      ['Six', 'Nsia'],
+      ['Seven', 'Nson'],
+      ['Eight', 'Nwɔtwe'],
+      ['Nine', 'Nkron'],
+      ['Ten', 'Du'],
+    ],
+    phrases: [
+      ['How many?', 'Ahe?'],
+      ['It is five.', 'Ɛyɛ enum.'],
+      ['I am twelve years old.', 'Me di mfeɛ dumienu.'],
+    ],
+  },
+  {
+    id: 'tw-colour',
+    lang: 'twi',
+    bands: ['lp', 'up'],
+    titleLocal: 'Ahosuo',
+    titleEn: 'Colours',
+    strand: 'Vocabulary',
+    contentStatus: 'verified',
+    note: 'Kente colours carry meaning: gold for wealth, green for growth and harvest, red for sacrifice and struggle.',
+    words: [
+      ['Red', 'Kɔkɔɔ'],
+      ['Black', 'Tuntum'],
+      ['White', 'Fitaa'],
+      ['Green', 'Ahabammono'],
+      ['Yellow', 'Akokɔsrade'],
+      ['Blue', 'Bruu'],
+    ],
+    phrases: [['My clothes are white.', 'Me ntaadeɛ yɛ fitaa.']],
+  },
+  {
+    id: 'tw-body',
+    lang: 'twi',
+    bands: ['lp', 'up'],
+    titleLocal: 'Nipadua',
+    titleEn: 'The body',
+    strand: 'Vocabulary',
+    contentStatus: 'verified',
+    note: 'Use your right hand to give and receive things, especially from elders. Using the left is considered rude.',
+    words: [
+      ['Head', 'Ti'],
+      ['Eye', 'Ani'],
+      ['Ear', 'Aso'],
+      ['Nose', 'Hwene'],
+      ['Mouth', 'Ano'],
+      ['Hand', 'Nsa'],
+      ['Leg', 'Nan'],
+      ['Tooth', 'Se'],
+      ['Stomach', 'Yafunu'],
+    ],
+    phrases: [['My head hurts.', 'Me ti yɛ me ya.']],
+  },
+  {
+    id: 'tw-school',
+    lang: 'twi',
+    bands: ['up', 'jhs'],
+    titleLocal: 'Sukuu',
+    titleEn: 'At school',
+    strand: 'Oral language',
+    contentStatus: 'verified',
+    note: "“Mente aseɛ” (I don't understand) is one of the most useful phrases in any classroom. Ask early.",
+    words: [
+      ['School', 'Sukuu'],
+      ['Teacher', 'Ɔkyerɛkyerɛfoɔ'],
+      ['Student', 'Sukuuni'],
+      ['Book', 'Nwoma'],
+      ['Classroom', 'Adesuadan'],
+      ['Lesson', 'Adesua'],
+      ['Read', 'Kenkan'],
+      ['Write', 'Twerɛ'],
+      ['Question', 'Asɛmmisa'],
+    ],
+    phrases: [
+      ['I am going to school.', 'Merekɔ sukuu.'],
+      ["I don't understand.", 'Mente aseɛ.'],
+      ['Please, say it again.', 'Mepa wo kyɛw, san ka bio.'],
+    ],
+  },
+  {
+    id: 'tw-market',
+    lang: 'twi',
+    bands: ['up', 'jhs', 'shs'],
+    titleLocal: 'Gua so',
+    titleEn: 'At the market',
+    strand: 'Oral language',
+    contentStatus: 'verified',
+    note: 'Bargaining is normal at the market. Start politely: “Mepa wo kyɛw, ɛyɛ sɛn?” and smile when you ask for a discount.',
+    words: [
+      ['Market', 'Gua'],
+      ['Money', 'Sika'],
+      ['Water', 'Nsuo'],
+      ['Food', 'Aduane'],
+      ['Plantain', 'Borɔdeɛ'],
+      ['Cassava', 'Bankye'],
+      ['Egg', 'Nkosua'],
+      ['Orange', 'Ankaa'],
+      ['Banana', 'Kwadu'],
+      ['Pineapple', 'Aborɔbɛ'],
+      ['Buy', 'Tɔ'],
+      ['Sell', 'Tɔn'],
+    ],
+    phrases: [
+      ['How much is it?', 'Ɛyɛ sɛn?'],
+      ["It's too expensive.", 'Ne boɔ yɛ den.'],
+      ['Reduce it for me.', 'Te so ma me.'],
+      ['I want to buy bread.', 'Mepɛ sɛ metɔ paanoo.'],
+    ],
+  },
+  {
+    id: 'tw-days',
+    lang: 'twi',
+    bands: ['up', 'jhs'],
+    titleLocal: 'Nna',
+    titleEn: 'Days and time',
+    strand: 'Vocabulary',
+    contentStatus: 'verified',
+    note: 'Akan day names come from the day you were born. Monday-born: Kwadwo or Adwoa. Friday-born: Kofi or Afua. Do you know yours?',
+    words: [
+      ['Monday', 'Dwoada'],
+      ['Tuesday', 'Benada'],
+      ['Wednesday', 'Wukuada'],
+      ['Thursday', 'Yawoada'],
+      ['Friday', 'Fiada'],
+      ['Saturday', 'Memeneda'],
+      ['Sunday', 'Kwasiada'],
+      ['Today', 'Ɛnnɛ'],
+      ['Tomorrow', 'Ɔkyena'],
+      ['Yesterday', 'Ɛnnora'],
+    ],
+    phrases: [
+      ['Today is Monday.', 'Ɛnnɛ yɛ Dwoada.'],
+      ['See you tomorrow.', 'Yɛbɛhyia ɔkyena.'],
+    ],
+  },
+  {
+    id: 'tw-culture',
+    lang: 'twi',
+    bands: ['jhs', 'shs'],
+    titleLocal: 'Amammerɛ',
+    titleEn: 'Culture and tradition',
+    strand: 'Literature and culture',
+    contentStatus: 'verified',
+    note: 'At formal gatherings the ɔkyeame (linguist) speaks for the chief. You address the chief through the ɔkyeame, not directly.',
+    words: [
+      ['Culture', 'Amammerɛ'],
+      ['Chief', 'Ɔhene'],
+      ['Queen mother', 'Ɔhemmaa'],
+      ['Linguist', 'Ɔkyeame'],
+      ['Palace', 'Ahenfie'],
+      ['Stool', 'Akonnwa'],
+      ['Festival', 'Afahyɛ'],
+      ['Funeral', 'Ayie'],
+      ['Talking drum', 'Atumpan'],
+    ],
+    phrases: [
+      ['The chief is coming.', 'Ɔhene no reba.'],
+      ["Let's go to the festival.", 'Yɛnkɔ afahyɛ.'],
+    ],
+  },
+  {
+    id: 'tw-proverbs',
+    lang: 'twi',
+    bands: ['shs'],
+    titleLocal: 'Mmɛ',
+    titleEn: 'Proverbs and wisdom',
+    strand: 'Literature and culture',
+    contentStatus: 'verified',
+    note: 'Proverbs mark a skilled speaker. WASSCE oral and essay papers reward using them correctly, so learn what each one means, not just the words.',
+    words: [
+      ['Proverb', 'Ɛbɛ'],
+      ['Wisdom', 'Nyansa'],
+      ['Folktale', 'Anansesɛm'],
+      ['History', 'Abakɔsɛm'],
+      ['Elder', 'Ɔpanyin'],
+      ['Advice', 'Afotuo'],
+    ],
+    phrases: [
+      ['It is not wrong to go back for what you forgot.', 'Sɛ wo werɛ fi na wosan kɔ fa a, yennkyiri.'],
+      ['A tree that faces the wind alone will break.', 'Dua koro gye mframa a, ɛbu.'],
+      ["Wisdom is not in one person's head.", 'Nyansa nni onipa baako ti mu.'],
+      ["A child can crack a snail's shell, not a tortoise's.", 'Abɔfra bɔ nwa, na ɔmmɔ akyekyedeɛ.'],
+    ],
+  },
+  {
+    id: 'ga-greet',
+    lang: 'ga',
+    bands: ['lp', 'up', 'jhs', 'shs'],
+    titleLocal: null,
+    titleEn: 'Greetings and introductions',
+    strand: 'Oral language',
+    contentStatus: 'review',
+    note: 'Ga is spoken mainly in Greater Accra. Like Twi it uses ɛ and ɔ, and it adds ŋ, said like the “ng” in sing.',
+    words: [
+      ['Thank you', 'Oyiwaladɔŋŋ'],
+      ['Please', 'Ofainɛ'],
+      ['Well done', 'Ojekoo'],
+      ['Yes', 'Hɛɛ'],
+      ['No', 'Dabi'],
+      ['Fine, good', 'Ojogbaŋŋ'],
+    ],
+    phrases: [
+      ['How are you?', 'Te oyɔɔ tɛŋŋ?'],
+      ['What is your name?', 'Mɛni ji o gbɛi?'],
+      ['My name is Ama.', 'Migbɛi ji Ama.'],
+    ],
+  },
+  {
+    id: 'ga-num',
+    lang: 'ga',
+    bands: ['lp', 'up', 'jhs', 'shs'],
+    titleLocal: null,
+    titleEn: 'Numbers 1 to 10',
+    strand: 'Vocabulary',
+    contentStatus: 'review',
+    note: "Practise counting prices out loud. Markets like Makola are where you'll hear Ga numbers fastest.",
+    words: [
+      ['One', 'Ekome'],
+      ['Two', 'Enyɔ'],
+      ['Three', 'Etɛ'],
+      ['Four', 'Ejwɛ'],
+      ['Five', 'Enumɔ'],
+      ['Six', 'Ekpaa'],
+      ['Seven', 'Kpawo'],
+      ['Eight', 'Kpaanyɔ'],
+      ['Nine', 'Nɛɛhu'],
+      ['Ten', 'Nyɔŋma'],
+    ],
+    phrases: [],
+  },
+  {
+    id: 'ga-home',
+    lang: 'ga',
+    bands: ['lp', 'up', 'jhs', 'shs'],
+    titleLocal: null,
+    titleEn: 'Family and home',
+    strand: 'Vocabulary',
+    contentStatus: 'review',
+    note: 'Homowo, the Ga harvest festival, means “hooting at hunger”. Families sprinkle kpokpoi to honour their ancestors.',
+    words: [
+      ['Family', 'Weku'],
+      ['Father', 'Tsɛ'],
+      ['Mother', 'Nyɛ'],
+      ['Sibling', 'Nyɛmi'],
+      ['Child', 'Bi'],
+      ['Water', 'Nu'],
+      ['Food', 'Niyenii'],
+      ['Kenkey', 'Komi'],
+    ],
+    phrases: [],
+  },
+];
+
+export const ITEMS: Record<string, SeedItem> = {};
+for (const u of UNITS) {
+  u.words.forEach(([english, translation], i) => {
+    const id = `${u.id}-w${i + 1}`;
+    ITEMS[id] = { id, unitId: u.id, lang: u.lang, kind: 'word', english, translation, audioUrl: null };
+  });
+  u.phrases.forEach(([english, translation], i) => {
+    const id = `${u.id}-p${i + 1}`;
+    ITEMS[id] = { id, unitId: u.id, lang: u.lang, kind: 'phrase', english, translation, audioUrl: null };
+  });
+}
+
+export const wordIdsOf = (unit: SeedUnit) => unit.words.map((_, i) => `${unit.id}-w${i + 1}`);
+export const phraseIdsOf = (unit: SeedUnit) => unit.phrases.map((_, i) => `${unit.id}-p${i + 1}`);
+
+/** Stand-in for live Khaya AI output, for words outside the curriculum. */
+export const KHAYA_SAMPLES: Record<LanguageId, Array<[string, string]>> = {
+  twi: [
+    ['friend', 'Adamfo'],
+    ['house', 'Fie'],
+    ['love', 'Ɔdɔ'],
+    ['come here', 'Bra ha'],
+    ["let's go", 'Yɛnkɔ'],
+    ['good night', 'Da yie'],
+    ['i am hungry', 'Ɛkɔm de me'],
+    ['dog', 'Ɔkraman'],
+    ['sun', 'Awia'],
+  ],
+  ga: [
+    ['friend', 'Naanyo'],
+    ['house', 'Shia'],
+    ['money', 'Shika'],
+    ['fish', 'Loo'],
+    ['sea', 'Ŋshɔ'],
+  ],
+};
+
+/** Daily feature card on the home screen. */
+export const DAILY_FEATURES: Record<LanguageId, Array<{ kicker: string; local: string; english: string }>> = {
+  twi: [
+    {
+      kicker: 'Ɛbɛ · Proverb of the day',
+      local: 'Sɛ wo werɛ fi na wosan kɔ fa a, yennkyiri.',
+      english: 'It is not wrong to go back for what you forgot.',
+    },
+    {
+      kicker: 'Ɛbɛ · Proverb of the day',
+      local: 'Dua koro gye mframa a, ɛbu.',
+      english: 'A tree that faces the wind alone will break. Study with friends.',
+    },
+    {
+      kicker: 'Ɛbɛ · Proverb of the day',
+      local: 'Nyansa nni onipa baako ti mu.',
+      english: "Wisdom is not in one person's head. Ask questions.",
+    },
+    {
+      kicker: 'Ɛbɛ · Proverb of the day',
+      local: 'Abɔfra bɔ nwa, na ɔmmɔ akyekyedeɛ.',
+      english: "A child can crack a snail's shell, not a tortoise's. One step at a time.",
+    },
+  ],
+  ga: [
+    {
+      kicker: 'Did you know',
+      local: 'Homowo',
+      english: 'The Ga harvest festival’s name means “hooting at hunger”.',
+    },
+    {
+      kicker: 'Did you know',
+      local: 'Ojekoo',
+      english: 'Ga for “well done”. You’ll hear it after hard work of any kind.',
+    },
+  ],
+};
