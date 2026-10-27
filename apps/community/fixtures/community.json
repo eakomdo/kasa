@@ -1,0 +1,1389 @@
+{
+  "communities": [
+    {
+      "id": "announcements",
+      "name": "Kasa announcements",
+      "description": "News from the Kasa team: new units, features and community updates.",
+      "kind": "official",
+      "official": true,
+      "lang": null,
+      "bands": [],
+      "joinPolicy": "open",
+      "joinCode": "KSA-1A",
+      "status": "active",
+      "color": "forest",
+      "school": null,
+      "region": null,
+      "rules": [
+        "Be kind and patient. Everyone here is still learning.",
+        "Explain your answers so others learn too.",
+        "Never share phone numbers, emails or social media, and never arrange to meet."
+      ],
+      "staffOnlyPosting": true,
+      "createdById": "u-efua",
+      "slug": "announcements",
+      "createdAt": -10368000,
+      "reviewNote": null,
+      "reviewedById": null
+    },
+    {
+      "id": "twi-help",
+      "name": "Twi help",
+      "description": "Stuck on a Twi word, phrase or spelling? Ask here.",
+      "kind": "official",
+      "official": true,
+      "lang": "twi",
+      "bands": [],
+      "joinPolicy": "open",
+      "joinCode": "TWI-2B",
+      "status": "active",
+      "color": "gold",
+      "school": null,
+      "region": null,
+      "rules": [
+        "Be kind and patient. Everyone here is still learning.",
+        "Explain your answers so others learn too.",
+        "Never share phone numbers, emails or social media, and never arrange to meet."
+      ],
+      "staffOnlyPosting": false,
+      "createdById": "u-efua",
+      "slug": "twi-help",
+      "createdAt": -10368000,
+      "reviewNote": null,
+      "reviewedById": null
+    },
+    {
+      "id": "ga-help",
+      "name": "Ga help",
+      "description": "Questions about Ga words, greetings and spelling.",
+      "kind": "official",
+      "official": true,
+      "lang": "ga",
+      "bands": [],
+      "joinPolicy": "open",
+      "joinCode": "GAA-3C",
+      "status": "active",
+      "color": "sky",
+      "school": null,
+      "region": null,
+      "rules": [
+        "Be kind and patient. Everyone here is still learning.",
+        "Explain your answers so others learn too.",
+        "Never share phone numbers, emails or social media, and never arrange to meet."
+      ],
+      "staffOnlyPosting": false,
+      "createdById": "u-efua",
+      "slug": "ga-help",
+      "createdAt": -10368000,
+      "reviewNote": null,
+      "reviewedById": null
+    },
+    {
+      "id": "bece-prep",
+      "name": "BECE and WASSCE prep",
+      "description": "Revision tips and practice ideas for your Ghanaian language exams.",
+      "kind": "official",
+      "official": true,
+      "lang": null,
+      "bands": [],
+      "joinPolicy": "open",
+      "joinCode": "BCE-4D",
+      "status": "active",
+      "color": "clay",
+      "school": null,
+      "region": null,
+      "rules": [
+        "Be kind and patient. Everyone here is still learning.",
+        "Explain your answers so others learn too.",
+        "Never share phone numbers, emails or social media, and never arrange to meet."
+      ],
+      "staffOnlyPosting": false,
+      "createdById": "u-efua",
+      "slug": "bece-prep",
+      "createdAt": -10368000,
+      "reviewNote": null,
+      "reviewedById": null
+    },
+    {
+      "id": "culture",
+      "name": "Proverbs, stories and culture",
+      "description": "Share proverbs, festivals and the stories behind the words.",
+      "kind": "official",
+      "official": true,
+      "lang": null,
+      "bands": [],
+      "joinPolicy": "open",
+      "joinCode": "PRV-5E",
+      "status": "active",
+      "color": "gold",
+      "school": null,
+      "region": null,
+      "rules": [
+        "Be kind and patient. Everyone here is still learning.",
+        "Explain your answers so others learn too.",
+        "Never share phone numbers, emails or social media, and never arrange to meet."
+      ],
+      "staffOnlyPosting": false,
+      "createdById": "u-efua",
+      "slug": "culture",
+      "createdAt": -10368000,
+      "reviewNote": null,
+      "reviewedById": null
+    },
+    {
+      "id": "pronunciation",
+      "name": "Pronunciation",
+      "description": "How do you say it? Help with sounds, tones and special letters.",
+      "kind": "official",
+      "official": true,
+      "lang": null,
+      "bands": [],
+      "joinPolicy": "open",
+      "joinCode": "PRN-6F",
+      "status": "active",
+      "color": "sky",
+      "school": null,
+      "region": null,
+      "rules": [
+        "Be kind and patient. Everyone here is still learning.",
+        "Explain your answers so others learn too.",
+        "Never share phone numbers, emails or social media, and never arrange to meet."
+      ],
+      "staffOnlyPosting": false,
+      "createdById": "u-efua",
+      "slug": "pronunciation",
+      "createdAt": -10368000,
+      "reviewNote": null,
+      "reviewedById": null
+    },
+    {
+      "id": "asafo-jhs1b",
+      "name": "Asafo JHS 1B Twi",
+      "description": "Our class space for Twi with Mr Boateng. Homework reminders, questions about lessons and practice together.",
+      "kind": "class",
+      "official": false,
+      "lang": "twi",
+      "bands": [
+        "jhs"
+      ],
+      "joinPolicy": "code",
+      "joinCode": "ASF-7B",
+      "status": "active",
+      "color": "forest",
+      "school": "Asafo M/A JHS",
+      "region": "Ashanti",
+      "rules": [
+        "Be kind and patient. Everyone here is still learning.",
+        "Explain your answers so others learn too.",
+        "Never share phone numbers or meet up.",
+        "Use your real first name so Mr Boateng knows who you are."
+      ],
+      "staffOnlyPosting": false,
+      "createdById": "u-kojo",
+      "slug": "asafo-jhs1b",
+      "createdAt": -2592000,
+      "reviewNote": null,
+      "reviewedById": "u-yaw"
+    },
+    {
+      "id": "kumasi-bece",
+      "name": "Kumasi BECE study group",
+      "description": "JHS 3 students in Kumasi revising Twi for the BECE together. We set a weekly goal and check in every Friday.",
+      "kind": "study",
+      "official": false,
+      "lang": "twi",
+      "bands": [
+        "jhs"
+      ],
+      "joinPolicy": "request",
+      "joinCode": "KMS-8C",
+      "status": "active",
+      "color": "clay",
+      "school": null,
+      "region": "Ashanti",
+      "rules": [
+        "Be kind and patient.",
+        "Post your weekly progress every Friday.",
+        "Never share phone numbers or meet up."
+      ],
+      "staffOnlyPosting": false,
+      "createdById": "u-kwame",
+      "slug": "kumasi-bece",
+      "createdAt": -1036800,
+      "reviewNote": null,
+      "reviewedById": "u-yaw"
+    },
+    {
+      "id": "accra-ga",
+      "name": "Accra Ga learners",
+      "description": "For anyone learning Ga in and around Accra. Share words you hear at home, at school and at the market.",
+      "kind": "interest",
+      "official": false,
+      "lang": "ga",
+      "bands": [],
+      "joinPolicy": "open",
+      "joinCode": "ACR-9D",
+      "status": "active",
+      "color": "sky",
+      "school": null,
+      "region": "Greater Accra",
+      "rules": [
+        "Be kind and patient.",
+        "Explain your answers.",
+        "Never share phone numbers or meet up."
+      ],
+      "staffOnlyPosting": false,
+      "createdById": "u-naa",
+      "slug": "accra-ga",
+      "createdAt": -2160000,
+      "reviewNote": null,
+      "reviewedById": "u-yaw"
+    },
+    {
+      "id": "sunyani-readers",
+      "name": "Sunyani Twi readers",
+      "description": "SHS students in Bono who want to read Twi stories and proverbs together and talk about what they mean.",
+      "kind": "interest",
+      "official": false,
+      "lang": "twi",
+      "bands": [
+        "shs"
+      ],
+      "joinPolicy": "request",
+      "joinCode": "SNY-2E",
+      "status": "pending",
+      "color": "gold",
+      "school": "Sunyani Hilltop SHS",
+      "region": "Bono",
+      "rules": [
+        "Be kind and patient.",
+        "Explain your answers.",
+        "Never share phone numbers or meet up."
+      ],
+      "staffOnlyPosting": false,
+      "createdById": "u-akosua",
+      "slug": "sunyani-readers",
+      "createdAt": -86400,
+      "reviewNote": null,
+      "reviewedById": null
+    },
+    {
+      "id": "cheap-data",
+      "name": "Cheap data deals",
+      "description": "Best data bundle prices for students. Message me for deals every week.",
+      "kind": "interest",
+      "official": false,
+      "lang": null,
+      "bands": [],
+      "joinPolicy": "open",
+      "joinCode": "CHP-3F",
+      "status": "rejected",
+      "color": "clay",
+      "school": null,
+      "region": "Western",
+      "rules": [],
+      "staffOnlyPosting": false,
+      "createdById": "u-kwesi",
+      "slug": "cheap-data",
+      "createdAt": -259200,
+      "reviewNote": "Communities on Kasa are for learning Twi and Ga together. Selling things isn’t allowed.",
+      "reviewedById": "u-yaw"
+    }
+  ],
+  "memberships": [
+    {
+      "communityId": "announcements",
+      "userId": "u-efua",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -10368000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-yaw",
+      "role": "admin",
+      "status": "member",
+      "joinedAt": -9504000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-efua",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -10368000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-yaw",
+      "role": "admin",
+      "status": "member",
+      "joinedAt": -9504000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "ga-help",
+      "userId": "u-efua",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -10368000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "ga-help",
+      "userId": "u-yaw",
+      "role": "admin",
+      "status": "member",
+      "joinedAt": -9504000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "bece-prep",
+      "userId": "u-efua",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -10368000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "bece-prep",
+      "userId": "u-yaw",
+      "role": "admin",
+      "status": "member",
+      "joinedAt": -9504000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "culture",
+      "userId": "u-efua",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -10368000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "culture",
+      "userId": "u-yaw",
+      "role": "admin",
+      "status": "member",
+      "joinedAt": -9504000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "pronunciation",
+      "userId": "u-efua",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -10368000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "pronunciation",
+      "userId": "u-yaw",
+      "role": "admin",
+      "status": "member",
+      "joinedAt": -9504000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-kojo",
+      "role": "admin",
+      "status": "member",
+      "joinedAt": -7776000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "ga-help",
+      "userId": "u-naa",
+      "role": "admin",
+      "status": "member",
+      "joinedAt": -6912000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-ama",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-ama",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-kojo",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-naa",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-kwame",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-kwame",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-yaa",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-yaa",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-kofi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-kofi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-akosua",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-akosua",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-esi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-esi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-nii",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "ga-help",
+      "userId": "u-nii",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-adjoa",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "ga-help",
+      "userId": "u-adjoa",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-kwesi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-kwesi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "announcements",
+      "userId": "u-fiifi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "twi-help",
+      "userId": "u-fiifi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "bece-prep",
+      "userId": "u-ama",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "bece-prep",
+      "userId": "u-kwame",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "bece-prep",
+      "userId": "u-yaa",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "bece-prep",
+      "userId": "u-kofi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "bece-prep",
+      "userId": "u-fiifi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "bece-prep",
+      "userId": "u-kwesi",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "culture",
+      "userId": "u-akosua",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "culture",
+      "userId": "u-kwame",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "culture",
+      "userId": "u-kojo",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "pronunciation",
+      "userId": "u-adjoa",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "asafo-jhs1b",
+      "userId": "u-kojo",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -2592000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "asafo-jhs1b",
+      "userId": "u-kwame",
+      "role": "helper",
+      "status": "member",
+      "joinedAt": -2505600,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "asafo-jhs1b",
+      "userId": "u-ama",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -2419200,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "asafo-jhs1b",
+      "userId": "u-yaa",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -2419200,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "kumasi-bece",
+      "userId": "u-kwame",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -1036800,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "kumasi-bece",
+      "userId": "u-yaa",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -864000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "accra-ga",
+      "userId": "u-naa",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -2160000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "accra-ga",
+      "userId": "u-nii",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -1728000,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "accra-ga",
+      "userId": "u-adjoa",
+      "role": "member",
+      "status": "member",
+      "joinedAt": -345600,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "sunyani-readers",
+      "userId": "u-akosua",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -86400,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "cheap-data",
+      "userId": "u-kwesi",
+      "role": "owner",
+      "status": "member",
+      "joinedAt": -259200,
+      "requestedAt": null,
+      "requestNote": null
+    },
+    {
+      "communityId": "kumasi-bece",
+      "userId": "u-kofi",
+      "role": null,
+      "status": "pending",
+      "joinedAt": null,
+      "requestedAt": -43200,
+      "requestNote": "I’m in JHS 3 at Bantama and want to revise for the BECE with you."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-seed-reply",
+      "userId": "u-ama",
+      "kind": "reply",
+      "title": "Kwame O. replied to your question",
+      "body": "“How do I reply when Mr Boateng greets us in the morning?” in Asafo JHS 1B Twi",
+      "href": "/community/t/t-asafo-reply",
+      "createdAt": -73440,
+      "read": false
+    },
+    {
+      "id": "n-seed-badge",
+      "userId": "u-ama",
+      "kind": "badge",
+      "title": "You earned the Akwaaba badge",
+      "body": "You finished your first practice session. Ayekoo!",
+      "href": "/profile",
+      "createdAt": -518400,
+      "read": true
+    },
+    {
+      "id": "n-seed-request",
+      "userId": "u-kwame",
+      "kind": "join_request",
+      "title": "Kofi A. asked to join Kumasi BECE study group",
+      "body": "Approve or decline the request.",
+      "href": "/community/c/kumasi-bece/manage",
+      "createdAt": -43200,
+      "read": false
+    },
+    {
+      "id": "n-seed-rejected",
+      "userId": "u-kwesi",
+      "kind": "community_rejected",
+      "title": "Cheap data deals wasn’t approved",
+      "body": "Communities on Kasa are for learning Twi and Ga together. Selling things isn’t allowed.",
+      "href": "/community/c/cheap-data",
+      "createdAt": -172800,
+      "read": false
+    }
+  ],
+  "threads": [
+    {
+      "id": "t-welcome",
+      "communityId": "announcements",
+      "title": "Akwaaba to the Kasa community",
+      "body": "Akwaaba! This is a place to ask questions, help each other and share what you are learning in Twi and Ga.\n\nA few rules keep it safe for everyone:\n\n1. Be kind. Everyone here is still learning.\n\n2. Explain your answers. Help people understand, don’t just hand over homework answers.\n\n3. Never share your phone number, email, address or social media, and never arrange to meet anyone.\n\n4. If something feels wrong, tap Report. Moderators check reports every day.\n\nTeachers have a green Teacher badge. Their answers are checked against the GES curriculum.\n\nMedaase, and enjoy learning!",
+      "authorId": "u-efua",
+      "lang": null,
+      "tags": [],
+      "pinned": true,
+      "locked": true,
+      "baseScore": 48,
+      "createdAt": -1209600,
+      "lastActivityAt": -1209600,
+      "status": "visible",
+      "acceptedReplyId": null
+    },
+    {
+      "id": "t-yaa-ena",
+      "communityId": "twi-help",
+      "title": "When do I say “Yaa ɛna” or “Yaa agya”?",
+      "body": "My grandmother greeted me “Maakye” this morning and I didn’t know how to answer. I know there is a special reply but I mix them up. When do I use each one?",
+      "authorId": "u-yaa",
+      "lang": "twi",
+      "tags": [
+        "twi",
+        "grammar"
+      ],
+      "pinned": false,
+      "locked": false,
+      "baseScore": 21,
+      "createdAt": -777600,
+      "lastActivityAt": -759600,
+      "status": "visible",
+      "acceptedReplyId": "r-yaa-ena-1"
+    },
+    {
+      "id": "t-mmienu",
+      "communityId": "twi-help",
+      "title": "Mmienu or baanu? Which one means two?",
+      "body": "In the numbers unit “two” is “Mmienu”, but in the family unit it says “Mewɔ anuanom baanu” for “I have two siblings”. Are they the same word?",
+      "authorId": "u-kofi",
+      "lang": "twi",
+      "tags": [
+        "twi",
+        "vocabulary",
+        "grammar"
+      ],
+      "pinned": false,
+      "locked": false,
+      "baseScore": 17,
+      "createdAt": -604800,
+      "lastActivityAt": -594000,
+      "status": "visible",
+      "acceptedReplyId": "r-mmienu-1"
+    },
+    {
+      "id": "t-proverbs",
+      "communityId": "culture",
+      "title": "Share your favourite Twi proverb",
+      "body": "We are learning proverbs in SHS 1. Which one is your favourite and what does it mean to you? Mine is “Nyansa nni onipa baako ti mu” (wisdom is not in one person’s head). It reminds me to ask for help.",
+      "authorId": "u-akosua",
+      "lang": "twi",
+      "tags": [
+        "proverbs",
+        "twi"
+      ],
+      "pinned": false,
+      "locked": false,
+      "baseScore": 19,
+      "createdAt": -518400,
+      "lastActivityAt": -446400,
+      "status": "visible",
+      "acceptedReplyId": null
+    },
+    {
+      "id": "t-ga-thanks",
+      "communityId": "ga-help",
+      "title": "How do you say “thank you” in Ga?",
+      "body": "I just started the Ga course. What is the word for thank you? I want to thank my auntie in Accra.",
+      "authorId": "u-esi",
+      "lang": "ga",
+      "tags": [
+        "ga",
+        "vocabulary"
+      ],
+      "pinned": false,
+      "locked": false,
+      "baseScore": 8,
+      "createdAt": -432000,
+      "lastActivityAt": -410400,
+      "status": "visible",
+      "acceptedReplyId": "r-ga-thanks-1"
+    },
+    {
+      "id": "t-pronounce",
+      "communityId": "pronunciation",
+      "title": "How do I pronounce ɛ and ɔ?",
+      "body": "I can read them but I’m not sure my sounds are right. Any tips for ɛ and ɔ?",
+      "authorId": "u-adjoa",
+      "lang": null,
+      "tags": [
+        "pronunciation"
+      ],
+      "pinned": false,
+      "locked": false,
+      "baseScore": 10,
+      "createdAt": -345600,
+      "lastActivityAt": -334800,
+      "status": "visible",
+      "acceptedReplyId": null
+    },
+    {
+      "id": "t-bece-revise",
+      "communityId": "bece-prep",
+      "title": "How do you revise vocabulary for the BECE?",
+      "body": "BECE is coming and I keep forgetting words I learned last term. How do you all revise?",
+      "authorId": "u-kwame",
+      "lang": null,
+      "tags": [
+        "bece",
+        "vocabulary"
+      ],
+      "pinned": false,
+      "locked": false,
+      "baseScore": 15,
+      "createdAt": -259200,
+      "lastActivityAt": -230400,
+      "status": "visible",
+      "acceptedReplyId": null
+    },
+    {
+      "id": "t-challenge",
+      "communityId": "bece-prep",
+      "title": "Daily 10-card challenge, who’s in?",
+      "body": "Let’s all do at least 10 cards a day this week and post here when we finish. Day 1 done ✅",
+      "authorId": "u-ama",
+      "lang": null,
+      "tags": [
+        "vocabulary"
+      ],
+      "pinned": false,
+      "locked": false,
+      "baseScore": 12,
+      "createdAt": -172800,
+      "lastActivityAt": -129600,
+      "status": "visible",
+      "acceptedReplyId": null
+    },
+    {
+      "id": "t-computer",
+      "communityId": "twi-help",
+      "title": "What is the Twi word for computer?",
+      "body": "Our ICT teacher asked us and nobody in class knew. Is there a Twi word, or do we just say computer?",
+      "authorId": "u-yaa",
+      "lang": "twi",
+      "tags": [
+        "twi",
+        "vocabulary"
+      ],
+      "pinned": false,
+      "locked": false,
+      "baseScore": 3,
+      "createdAt": -25920,
+      "lastActivityAt": -25920,
+      "status": "visible",
+      "acceptedReplyId": null
+    },
+    {
+      "id": "t-asafo-homework",
+      "communityId": "asafo-jhs1b",
+      "title": "Homework: practise the greetings unit before Friday",
+      "body": "Akwaaba to our class space! Before Friday, please finish two practice sessions on the Nkyia (greetings) unit. On Friday we will greet each other in Twi at the start of the lesson.\n\nIf you are stuck, ask here. Kwame is our class helper and can approve new classmates.",
+      "authorId": "u-kojo",
+      "lang": "twi",
+      "tags": [
+        "twi",
+        "vocabulary"
+      ],
+      "pinned": true,
+      "locked": false,
+      "baseScore": 6,
+      "createdAt": -432000,
+      "lastActivityAt": -360000,
+      "status": "visible",
+      "acceptedReplyId": null
+    },
+    {
+      "id": "t-asafo-reply",
+      "communityId": "asafo-jhs1b",
+      "title": "How do I reply when Mr Boateng greets us in the morning?",
+      "body": "When Mr Boateng says “Maakye” to the class, what should we say back?",
+      "authorId": "u-ama",
+      "lang": "twi",
+      "tags": [
+        "twi",
+        "grammar"
+      ],
+      "pinned": false,
+      "locked": false,
+      "baseScore": 3,
+      "createdAt": -86400,
+      "lastActivityAt": -75600,
+      "status": "visible",
+      "acceptedReplyId": null
+    },
+    {
+      "id": "t-kumasi-week",
+      "communityId": "kumasi-bece",
+      "title": "This week: finish the market unit (Gua so)",
+      "body": "Our goal this week is the Gua so unit. Post here on Friday with how many cards you did. I’m starting with “Ɛyɛ sɛn?” and “Te so ma me.”",
+      "authorId": "u-kwame",
+      "lang": "twi",
+      "tags": [
+        "bece",
+        "vocabulary"
+      ],
+      "pinned": true,
+      "locked": false,
+      "baseScore": 5,
+      "createdAt": -345600,
+      "lastActivityAt": -345600,
+      "status": "visible",
+      "acceptedReplyId": null
+    },
+    {
+      "id": "t-accra-welcome",
+      "communityId": "accra-ga",
+      "title": "Welcome! Start with the Ga greetings unit",
+      "body": "Welcome to Accra Ga learners. A good first step is the greetings unit. Try “Oyiwaladɔŋŋ” (thank you) at home this week and tell us how it went. Ojekoo!",
+      "authorId": "u-naa",
+      "lang": "ga",
+      "tags": [
+        "ga"
+      ],
+      "pinned": true,
+      "locked": false,
+      "baseScore": 7,
+      "createdAt": -1728000,
+      "lastActivityAt": -1728000,
+      "status": "visible",
+      "acceptedReplyId": null
+    }
+  ],
+  "replies": [
+    {
+      "id": "r-yaa-ena-1",
+      "threadId": "t-yaa-ena",
+      "authorId": "u-kojo",
+      "body": "Good question! The reply depends on who greets you:\n\n• “Yaa ɛna” to an older woman, like your grandmother or a female teacher.\n• “Yaa agya” to an older man.\n• “Yaa nua” to someone about your own age.\n\nSo for your grandmother: “Yaa ɛna”. She will be very happy you answered properly.",
+      "createdAt": -770400,
+      "status": "visible",
+      "baseScore": 34
+    },
+    {
+      "id": "r-yaa-ena-2",
+      "threadId": "t-yaa-ena",
+      "authorId": "u-kwame",
+      "body": "I used to mix them up too. I remember it because ɛna sounds like “mother”, so it is for women.",
+      "createdAt": -759600,
+      "status": "visible",
+      "baseScore": 12
+    },
+    {
+      "id": "r-mmienu-1",
+      "threadId": "t-mmienu",
+      "authorId": "u-kojo",
+      "body": "Both mean two, but Twi counts people and things differently:\n\n• “Mmienu” is for things: two books, two oranges.\n• “Baanu” is for people: two siblings, two teachers.\n\nThat is why the family phrase uses baanu. This often comes up in exams, so it is worth learning well.",
+      "createdAt": -594000,
+      "status": "visible",
+      "baseScore": 26
+    },
+    {
+      "id": "r-proverbs-1",
+      "threadId": "t-proverbs",
+      "authorId": "u-ama",
+      "body": "“Dua koro gye mframa a, ɛbu.” A tree that faces the wind alone will break. My friends and I revise together because of this one.",
+      "createdAt": -504000,
+      "status": "visible",
+      "baseScore": 11
+    },
+    {
+      "id": "r-proverbs-2",
+      "threadId": "t-proverbs",
+      "authorId": "u-kwame",
+      "body": "“Sɛ wo werɛ fi na wosan kɔ fa a, yennkyiri.” It is not wrong to go back for what you forgot. That is Sankofa! It is why I review old units.",
+      "createdAt": -486000,
+      "status": "visible",
+      "baseScore": 14
+    },
+    {
+      "id": "r-proverbs-3",
+      "threadId": "t-proverbs",
+      "authorId": "u-kojo",
+      "body": "Lovely choices. For the WASSCE, remember to explain the meaning and when you would use a proverb, not only write it out.",
+      "createdAt": -446400,
+      "status": "visible",
+      "baseScore": 9
+    },
+    {
+      "id": "r-ga-thanks-1",
+      "threadId": "t-ga-thanks",
+      "authorId": "u-naa",
+      "body": "“Oyiwaladɔŋŋ” means thank you. The ŋ is said like the “ng” in sing. Your auntie will love it!",
+      "createdAt": -428400,
+      "status": "visible",
+      "baseScore": 13
+    },
+    {
+      "id": "r-ga-thanks-2",
+      "threadId": "t-ga-thanks",
+      "authorId": "u-nii",
+      "body": "And if she says something nice back, you can answer “Ojekoo” (well done) when she cooks for you 😄",
+      "createdAt": -410400,
+      "status": "visible",
+      "baseScore": 5
+    },
+    {
+      "id": "r-pronounce-1",
+      "threadId": "t-pronounce",
+      "authorId": "u-yaw",
+      "body": "A simple way to start:\n\n• ɛ sounds like the “e” in bed. Try “Medaase”.\n• ɔ sounds like the “o” in pot. Try “Ɔkyena” (tomorrow).\n\nPlay the audio on the word cards and copy it out loud a few times.",
+      "createdAt": -334800,
+      "status": "visible",
+      "baseScore": 7
+    },
+    {
+      "id": "r-bece-1",
+      "threadId": "t-bece-revise",
+      "authorId": "u-kojo",
+      "body": "Some tips that work for my JHS 3 class:\n\n1. Little and often. 10 cards every day beats 100 cards on Sunday.\n2. Don’t skip review cards. Kasa brings words back just before you forget them.\n3. Say each word out loud, then write it with the correct letters (ɛ, ɔ).\n4. Use the multiple choice mode in the last weeks, because it is closest to the exam.",
+      "createdAt": -252000,
+      "status": "visible",
+      "baseScore": 22
+    },
+    {
+      "id": "r-bece-2",
+      "threadId": "t-bece-revise",
+      "authorId": "u-ama",
+      "body": "I set a WhatsApp reminder for 6pm in settings. It really helps me keep my streak.",
+      "createdAt": -230400,
+      "status": "visible",
+      "baseScore": 6
+    },
+    {
+      "id": "r-challenge-1",
+      "threadId": "t-challenge",
+      "authorId": "u-yaa",
+      "body": "I’m in! Day 1 done.",
+      "createdAt": -169200,
+      "status": "visible",
+      "baseScore": 4
+    },
+    {
+      "id": "r-challenge-2",
+      "threadId": "t-challenge",
+      "authorId": "u-kofi",
+      "body": "Done for today. 4 day streak now.",
+      "createdAt": -151200,
+      "status": "visible",
+      "baseScore": 3
+    },
+    {
+      "id": "r-challenge-3",
+      "threadId": "t-challenge",
+      "authorId": "u-kwesi",
+      "body": "CHEAP DATA BUNDLES 10GB for GH₵5!!! WhatsApp me on 024 555 0199 now",
+      "createdAt": -136800,
+      "status": "visible",
+      "baseScore": -6
+    },
+    {
+      "id": "r-challenge-4",
+      "threadId": "t-challenge",
+      "authorId": "u-fiifi",
+      "body": "your Twi is so bad lol",
+      "createdAt": -129600,
+      "status": "visible",
+      "baseScore": -3
+    },
+    {
+      "id": "r-asafo-hw-1",
+      "threadId": "t-asafo-homework",
+      "authorId": "u-yaa",
+      "body": "Done! Medaase, Mr Boateng.",
+      "createdAt": -360000,
+      "status": "visible",
+      "baseScore": 2
+    },
+    {
+      "id": "r-asafo-reply-1",
+      "threadId": "t-asafo-reply",
+      "authorId": "u-kwame",
+      "body": "Say “Yaa agya”, because he is older than us. Mr Boateng explained it in Twi help too: “Yaa ɛna” is for an older woman.",
+      "createdAt": -75600,
+      "status": "visible",
+      "baseScore": 4
+    }
+  ],
+  "votes": {},
+  "reports": [
+    {
+      "id": "rep-spam",
+      "targetType": "reply",
+      "targetId": "r-challenge-3",
+      "reason": "spam",
+      "note": "Advert with a phone number.",
+      "reporterId": "u-yaa",
+      "createdAt": -133200,
+      "status": "open",
+      "resolution": null,
+      "action": null
+    },
+    {
+      "id": "rep-rude-1",
+      "targetType": "reply",
+      "targetId": "r-challenge-4",
+      "reason": "bullying",
+      "note": "",
+      "reporterId": "u-ama",
+      "createdAt": -126000,
+      "status": "open",
+      "resolution": null,
+      "action": null
+    },
+    {
+      "id": "rep-rude-2",
+      "targetType": "reply",
+      "targetId": "r-challenge-4",
+      "reason": "bullying",
+      "note": "This is unkind to Ama.",
+      "reporterId": "u-kofi",
+      "createdAt": -118800,
+      "status": "open",
+      "resolution": null,
+      "action": null
+    },
+    {
+      "id": "rep-translation",
+      "targetType": "reply",
+      "targetId": "r-pronounce-1",
+      "reason": "wrong_translation",
+      "note": "The example word list looks muddled. “Medaase” has no ɛ in it.",
+      "reporterId": "u-akosua",
+      "createdAt": -324000,
+      "status": "open",
+      "resolution": null,
+      "action": null
+    },
+    {
+      "id": "rep-old",
+      "targetType": "thread",
+      "targetId": "t-challenge",
+      "reason": "other",
+      "note": "Is it allowed to make challenges?",
+      "reporterId": "u-esi",
+      "createdAt": -165600,
+      "status": "dismissed",
+      "resolution": "Dismissed by Yaw D.: friendly study challenges are welcome.",
+      "action": "dismiss"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "s-goodnight",
+      "lang": "twi",
+      "query": "good night",
+      "currentTranslation": "Da yie",
+      "suggestion": "Da yie (to one person), Mo nna yie (to a group)",
+      "submittedById": "u-akosua",
+      "supporters": 4,
+      "createdAt": -86400,
+      "status": "pending"
+    },
+    {
+      "id": "s-friend",
+      "lang": "twi",
+      "query": "friend",
+      "currentTranslation": "Adamfo",
+      "suggestion": "Adamfo or Ɔyɔnko",
+      "submittedById": "u-kwame",
+      "supporters": 2,
+      "createdAt": -172800,
+      "status": "pending"
+    },
+    {
+      "id": "s-computer",
+      "lang": "twi",
+      "query": "computer",
+      "currentTranslation": null,
+      "suggestion": "Kɔmputa",
+      "submittedById": "u-yaa",
+      "supporters": 6,
+      "createdAt": -17280,
+      "status": "pending"
+    },
+    {
+      "id": "s-ga-friend",
+      "lang": "ga",
+      "query": "friend",
+      "currentTranslation": "Naanyo",
+      "suggestion": "Naanyo (one friend)",
+      "submittedById": "u-nii",
+      "supporters": 1,
+      "createdAt": -259200,
+      "status": "pending"
+    },
+    {
+      "id": "s-family",
+      "lang": "twi",
+      "query": "family",
+      "currentTranslation": "Abusua",
+      "suggestion": "Abusua",
+      "submittedById": "u-kofi",
+      "supporters": 3,
+      "createdAt": -777600,
+      "status": "approved"
+    },
+    {
+      "id": "s-water",
+      "lang": "twi",
+      "query": "water",
+      "currentTranslation": "Nsuo",
+      "suggestion": "idk lol",
+      "submittedById": "u-kwesi",
+      "supporters": 0,
+      "createdAt": -518400,
+      "status": "rejected"
+    }
+  ]
+}

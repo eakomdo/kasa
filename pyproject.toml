@@ -1,0 +1,24 @@
+[project]
+name = "kasa-api"
+version = "1.0.0"
+description = "Kasa API: Ghanaian language learning on the GES curriculum"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings"
+python_files = ["tests.py", "test_*.py"]
+addopts = "-q --reuse-db -p no:cacheprovider"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+extend-exclude = ["*/migrations/*"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "DJ", "SIM"]
+# DJ001: the API contract distinguishes null from "" for optional text (school, region…)
+ignore = ["E501", "DJ001"]
+
+[tool.ruff.format]
+quote-style = "single"

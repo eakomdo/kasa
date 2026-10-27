@@ -1,0 +1,285 @@
+{
+  "people": [
+    {
+      "id": "u-ama",
+      "name": "Ama Mensah",
+      "email": "ama.mensah@example.com",
+      "role": "student",
+      "lang": "twi",
+      "levelId": "b7",
+      "school": "Asafo M/A JHS",
+      "region": "Ashanti",
+      "joinedDaysAgo": 40
+    },
+    {
+      "id": "u-kojo",
+      "name": "Kojo Boateng",
+      "email": "kojo.boateng@example.com",
+      "role": "teacher",
+      "lang": "twi",
+      "levelId": "b9",
+      "school": "Asafo M/A JHS",
+      "region": "Ashanti",
+      "joinedDaysAgo": 120
+    },
+    {
+      "id": "u-naa",
+      "name": "Naa Tetteh",
+      "email": "naa.tetteh@example.com",
+      "role": "teacher",
+      "lang": "ga",
+      "levelId": "b8",
+      "school": "Osu Klottey JHS",
+      "region": "Greater Accra",
+      "joinedDaysAgo": 95
+    },
+    {
+      "id": "u-yaw",
+      "name": "Yaw Darko",
+      "email": "yaw.darko@example.com",
+      "role": "moderator",
+      "lang": "twi",
+      "levelId": "shs3",
+      "school": null,
+      "region": "Eastern",
+      "joinedDaysAgo": 150
+    },
+    {
+      "id": "u-efua",
+      "name": "Efua Asante",
+      "email": "efua.asante@example.com",
+      "role": "admin",
+      "lang": "twi",
+      "levelId": "shs3",
+      "school": null,
+      "region": "Central",
+      "joinedDaysAgo": 200
+    },
+    {
+      "id": "u-kwame",
+      "name": "Kwame Owusu",
+      "email": "kwame.owusu@example.com",
+      "role": "student",
+      "lang": "twi",
+      "levelId": "b8",
+      "school": "Asafo M/A JHS",
+      "region": "Ashanti",
+      "joinedDaysAgo": 60,
+      "activeDaysAgo": 1
+    },
+    {
+      "id": "u-yaa",
+      "name": "Yaa Pokuaa",
+      "email": "yaa.pokuaa@example.com",
+      "role": "student",
+      "lang": "twi",
+      "levelId": "b7",
+      "school": "Asafo M/A JHS",
+      "region": "Ashanti",
+      "joinedDaysAgo": 22
+    },
+    {
+      "id": "u-kofi",
+      "name": "Kofi Asare",
+      "email": "kofi.asare@example.com",
+      "role": "student",
+      "lang": "twi",
+      "levelId": "b9",
+      "school": "Bantama Community JHS",
+      "region": "Ashanti",
+      "joinedDaysAgo": 75,
+      "activeDaysAgo": 2
+    },
+    {
+      "id": "u-akosua",
+      "name": "Akosua Agyeman",
+      "email": "akosua.agyeman@example.com",
+      "role": "student",
+      "lang": "twi",
+      "levelId": "shs1",
+      "school": "Sunyani Hilltop SHS",
+      "region": "Bono",
+      "joinedDaysAgo": 33
+    },
+    {
+      "id": "u-esi",
+      "name": "Esi Quaye",
+      "email": "esi.quaye@example.com",
+      "role": "student",
+      "lang": "twi",
+      "levelId": "b6",
+      "school": "Cape Coast Harbour Primary",
+      "region": "Central",
+      "guardianEmail": "parent.quaye@example.com",
+      "joinedDaysAgo": 12
+    },
+    {
+      "id": "u-nii",
+      "name": "Nii Armah",
+      "email": "nii.armah@example.com",
+      "role": "student",
+      "lang": "ga",
+      "levelId": "b8",
+      "school": "Osu Klottey JHS",
+      "region": "Greater Accra",
+      "joinedDaysAgo": 48
+    },
+    {
+      "id": "u-adjoa",
+      "name": "Adjoa Lamptey",
+      "email": "adjoa.lamptey@example.com",
+      "role": "student",
+      "lang": "ga",
+      "levelId": "shs2",
+      "school": "Teshie Model SHS",
+      "region": "Greater Accra",
+      "joinedDaysAgo": 5,
+      "activeDaysAgo": 0
+    },
+    {
+      "id": "u-kwesi",
+      "name": "Kwesi Appiah",
+      "email": "kwesi.appiah@example.com",
+      "role": "student",
+      "lang": "twi",
+      "levelId": "b8",
+      "school": null,
+      "region": "Western",
+      "joinedDaysAgo": 3,
+      "activeDaysAgo": 0
+    },
+    {
+      "id": "u-fiifi",
+      "name": "Fiifi Quansah",
+      "email": "fiifi.quansah@example.com",
+      "role": "student",
+      "lang": "twi",
+      "levelId": "shs2",
+      "school": "Cape Coast Harbour SHS",
+      "region": "Central",
+      "joinedDaysAgo": 18,
+      "activeDaysAgo": 1
+    }
+  ],
+  "peers": [
+    {
+      "displayName": "Kwame O.",
+      "school": "Asafo M/A JHS",
+      "region": "Ashanti",
+      "lang": "twi",
+      "xp": 640
+    },
+    {
+      "displayName": "Yaa P.",
+      "school": "Asafo M/A JHS",
+      "region": "Ashanti",
+      "lang": "twi",
+      "xp": 410
+    },
+    {
+      "displayName": "Serwaa B.",
+      "school": "Asafo M/A JHS",
+      "region": "Ashanti",
+      "lang": "twi",
+      "xp": 355
+    },
+    {
+      "displayName": "Osei K.",
+      "school": "Asafo M/A JHS",
+      "region": "Ashanti",
+      "lang": "twi",
+      "xp": 220
+    },
+    {
+      "displayName": "Afia D.",
+      "school": "Asafo M/A JHS",
+      "region": "Ashanti",
+      "lang": "twi",
+      "xp": 150
+    },
+    {
+      "displayName": "Kofi A.",
+      "school": "Bantama Community JHS",
+      "region": "Ashanti",
+      "lang": "twi",
+      "xp": 720
+    },
+    {
+      "displayName": "Adwoa S.",
+      "school": "Bantama Community JHS",
+      "region": "Ashanti",
+      "lang": "twi",
+      "xp": 505
+    },
+    {
+      "displayName": "Kwabena F.",
+      "school": "Ejisu Model JHS",
+      "region": "Ashanti",
+      "lang": "twi",
+      "xp": 830
+    },
+    {
+      "displayName": "Akosua A.",
+      "school": "Sunyani Hilltop SHS",
+      "region": "Bono",
+      "lang": "twi",
+      "xp": 910
+    },
+    {
+      "displayName": "Esi Q.",
+      "school": "Cape Coast Harbour Primary",
+      "region": "Central",
+      "lang": "twi",
+      "xp": 300
+    },
+    {
+      "displayName": "Fiifi Q.",
+      "school": "Cape Coast Harbour SHS",
+      "region": "Central",
+      "lang": "twi",
+      "xp": 460
+    },
+    {
+      "displayName": "Mawuli T.",
+      "school": "Ho Riverside JHS",
+      "region": "Volta",
+      "lang": "twi",
+      "xp": 275
+    },
+    {
+      "displayName": "Abdul-Rahman I.",
+      "school": "Tamale Central JHS",
+      "region": "Northern",
+      "lang": "twi",
+      "xp": 690
+    },
+    {
+      "displayName": "Nii A.",
+      "school": "Osu Klottey JHS",
+      "region": "Greater Accra",
+      "lang": "ga",
+      "xp": 580
+    },
+    {
+      "displayName": "Adjoa L.",
+      "school": "Teshie Model SHS",
+      "region": "Greater Accra",
+      "lang": "ga",
+      "xp": 330
+    },
+    {
+      "displayName": "Naa K.",
+      "school": "Osu Klottey JHS",
+      "region": "Greater Accra",
+      "lang": "ga",
+      "xp": 470
+    },
+    {
+      "displayName": "Tetteh N.",
+      "school": "La Presby JHS",
+      "region": "Greater Accra",
+      "lang": "ga",
+      "xp": 615
+    }
+  ]
+}
